@@ -1,0 +1,22 @@
+# Turn on URL rewriting
+RewriteEngine On
+
+# Installation directory
+RewriteBase /
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+
+# Protect application and system files from being viewed
+RewriteRule ^(application|modules|system) - [F,L]
+
+# Allow any files or directories that exist to be displayed directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite all other URLs to index.php/URL
+# RewriteRule .* index.php/$0 [PT,L]
+
+RewriteRule ^(.*)$ index.php?kohana_uri=$1 [QSA,PT,L]
+RewriteRule ^$ index.php?kohana_uri=$1 [QSA,PT,L]
+RewriteRule ^index.php/(.*) $1 [QSA,R,L]

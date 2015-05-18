@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
+</head>
+
+<body class="mainbody">
+
+<!-- header --><div class="wrapper headerdiv"><!-- header -->
+
+<a href="" class="mainlogo">Biggest Online Food Auction... </a>
+
+
+<div class="searcharea"><form action="" method="post">
+<ul>
+<li><input type="text" name="searchbox" placeholder="Search Product" /></li>
+<li><button>Search</button></li>
+</ul>
+</form></div>
+<div class="clearfix"></div>
+<div class="headerlinks2"><ul>
+<li><a href="">Sign in</a></li>
+<li><a href="">Register</a></li>
+</ul></div>
+
+
+<div class="clearfix"></div>
+
+<!-- main menu --><div class="mainmenu"><ul>
+<li><a href="">Fruits</a></li>
+<li><a href="">Vegetables</a></li>
+<li><a href="">Starch</a></li>
+<li><a href="">Drinks</a></li>
+<li><a href="">Desert</a></li>
+<li><a href="">Condiment</a></li>
+</ul></div><!-- main menu -->
+
+
+
+
+<!-- header --><div class="clearfix"></div></div><!-- header -->
+
+
+<div class="clearfix"></div>
+
+
+<!-- body --><div class="wrapper contentdiv"><!-- body -->
+
+
+
+<!-- header menu 2 --><div class="headmenu2"><ul>
+<li><a href="">First Time?</a></li>
+<li><a href="">Seller</a></li>
+<li><a href="">Buyer</a></li>
+</ul></div><!-- header menu 2 -->
+
+<div class="clearfix spacer"></div>
+<h1 class="spacedhead">Please enter your email address</h1>
+<div class="clearfix spacer"></div>
+
+<ul class="mainbodyform">
+<form action="http://www.logiclane.com.php53-10.ord1-1.websitetestlink.com/login/forgotpassword" method="post" id="form" class="form-horizontal" novalidate="novalidate">
+
+	<li>
+		Email<br>
+		<input type="text" name="email" class="span3 required email">
+	</li>
+	<li><button class="silverbutton normalbutton">Submit</button></li>
+</form>
+</ul>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#form").validate({
+	  	submitHandler: function() {
+	  		$.post("http://www.logiclane.com.php53-10.ord1-1.websitetestlink.com/login/check_forgotpassword", $('#form').serialize(), function(data){
+				if(data === false){
+					$("#notice").slideDown("slow");
+					$("#notice_msg").html("Your email address is not in our database.");
+				}else{
+					$("#notice").slideDown("slow");
+					$("#notice_msg").html("Your password has been sent.");
+				}
+			}, "json");
+	  	}
+	});
+});
+</script>
+
+
+
+
+<!-- body --><div class="clearfix"></div></div><!-- body -->
+
+
+</body>
+</html>

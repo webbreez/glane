@@ -1,0 +1,194 @@
+body {
+	background: #eaeaea url(../images/bg.jpg) repeat-x;
+	margin-top: 50px;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 12px;
+	color: #000;
+	/*text-align: center;*/
+}
+
+h1 {
+	font-size: 20px;
+	margin-bottom: 0px;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 14px;
+	text-transform: uppercase;
+	display: block;
+	background: #444;
+	color: #fff;
+	padding: 4px;
+	text-align: center;
+}
+
+h2.donate {
+	background: #f90213;
+}
+
+h2.donate a {
+	color: #fff;
+}
+
+h3 {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+a {
+	color: #c1131f;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #f90213;
+	text-decoration: underline;
+}
+
+form {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 12px;
+	color: #fff;
+	text-transform: uppercase;
+	/*background: #444;*/
+}
+
+form.go {
+	background: #000;
+	color: #fff;
+}
+
+#plate {
+	/*width: 1200px;*/
+	margin: auto;
+	text-align: center;
+	background: #fff;
+}
+
+#header {
+	background: #d5d3d3;
+	padding: 8px;
+	color: #444;
+	/*width: 1200px;*/
+}
+
+#header #holder {
+	width: 950px;
+	float: left;
+}
+
+#header #logo {
+	width: 210px;
+	float: left;
+}
+
+#header #logo img {
+	border: 1px solid #444;
+}
+
+#header #text {
+	width: 700px;
+	float: right;
+	padding-top: 10px;
+}
+
+#header #search {
+	width: 185px;
+	float: left;
+	margin-top: 40px;
+	padding: 10px;
+}
+
+#container {
+	width: 1180px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+#container #content {
+	width: 950px;
+	float: left;
+}
+
+#container #sideleft {
+	width: 210px;
+	float: left;
+}
+
+#container #sideleft ul {
+	list-style-image: url(../images/bl.png);
+	/*list-style-position: inside;*/
+	list-style-position: relative;
+	margin: 0;
+	padding: 0;
+	padding-left: 5px;
+}
+
+#container #sideleft li {
+	border-bottom: 1px solid #d5d3d3;
+	text-align: left;
+	margin-left: 0;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+#container #sideleft li a {
+	display: block;
+	padding: 5px;
+	color: #444;
+	width: 100%;
+} 
+
+html>body #sideleft li a {
+  width: auto;
+} 
+  #sideleft li a:hover {
+  color: #f90213;
+}
+
+#container #maincontent {
+	float: right;
+	width: 700px;
+}
+
+#container #maincontent img.feature {
+	border: 5px solid #444;
+}
+
+#container #sideright {
+	width: 185px;
+	float: right;
+	font-size: 14px;
+	margin-right: 20px;
+	text-align: center;
+}
+
+#container #sideright ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#container #sideright li {
+	border-bottom: 1px solid #ccc;
+}
+
+#container #sideright li a {
+	display: block;
+	background: #444;
+	padding: 5px;
+	color: #fff;
+	width: 100%;
+} 
+
+html>body #sideright li a {
+  width: auto;
+} 
+  #sideright li a:hover {
+  color: #f90213;
+}
+
+#clear {
+	clear: both;
+}

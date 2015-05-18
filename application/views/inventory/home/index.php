@@ -1,0 +1,1 @@
+<h3>Welcome to Inventory Panel</h3>
