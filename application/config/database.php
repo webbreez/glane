@@ -31,12 +31,12 @@ $config['default'] = array
 	'connection'    => array
 	(
 		'type'     => 'mysql',
-		'user'     => 'logiclane201502u',
-		'pass'     => '6a9Wm!k$t',
-		'host'     => 'localhost',
-		'port'     => '3306',
+		'user'     => 'dbusername',
+		'pass'     => 'dbpass',
+		'host'     => 'dbhost',
+		'port'     => 'sds',
 		'socket'   => FALSE,
-		'database' => 'logiclane201502'
+		'database' => 'dbname'
 	),
 	'character_set' => 'utf8',
 	'table_prefix'  => '',
